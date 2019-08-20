@@ -14,6 +14,7 @@ public class ResourceController {
 
   @RequestMapping("/relay")
   public Map<String, Object> relay(Principal user) {
-    return Collections.singletonMap("user", user.getName());
+    return Collections.singletonMap("user",
+        new StringBuilder(user.getName().toUpperCase()).reverse());
   }
 }
