@@ -12,7 +12,11 @@ public class RelayController {
   @Autowired
   private OAuth2RestOperations restTemplate;
 
-  //token relay without zuul proxy
+  /**
+   * Token relay example for oauth client app
+   *
+   * @return Name of logged in user
+   */
   @RequestMapping("/relay")
   public String relay() {
     ResponseEntity<String> response =

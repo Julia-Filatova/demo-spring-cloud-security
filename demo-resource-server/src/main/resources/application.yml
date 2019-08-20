@@ -5,7 +5,6 @@ server:
 logging:
   level:
     org.springframework.security: DEBUG
-    com.netflix.discovery: 'OFF'
 
 spring:
 security:

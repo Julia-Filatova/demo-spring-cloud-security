@@ -9,10 +9,17 @@ logging:
 
 zuul:
   routes:
-    products:
+    resource:
       path: /resource/**
-      url: http://localhost:8888/
+      url: http://localhost:8888/relay
+      sensitiveHeaders: Cookie,Set-Cookie
 
+proxy:
+  auth:
+    routes:
+      resource: oauth2
+#      resource: passthru
+#      resource: none
 
 spring:
 security:
