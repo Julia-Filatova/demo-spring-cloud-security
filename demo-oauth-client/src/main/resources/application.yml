@@ -19,10 +19,8 @@ proxy:
     loadBalanced: false
     routes:
       resource: oauth2
-#      resource: passthru
 #      resource: none
 
-spring:
 security:
   oauth2:
     sso:

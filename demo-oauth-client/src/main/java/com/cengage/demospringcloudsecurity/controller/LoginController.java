@@ -12,7 +12,7 @@ public class LoginController {
 
   @RequestMapping("/message")
   public Map<String, Object> dashboard() {
-    return Collections.singletonMap("message", "Yay!");
+    return Collections.singletonMap("message", "User is logged in now!");
   }
 
   @RequestMapping("/user")
