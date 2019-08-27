@@ -12,6 +12,8 @@ zuul:
     resource:
       path: /resource/**
       url: http://localhost:8888/relay
+      # By default, Authorization header is included in "sensitive" list and isn't passed
+      # to downstream requests, so we need to override this property to make token relay work
       sensitiveHeaders: Cookie,Set-Cookie
 
 proxy:
